@@ -62,6 +62,3 @@ Faire choisir papa
 ![[test logo app TRI-FI.zip]]
 
 ***
-
-
-pour cousin 
