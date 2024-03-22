@@ -12,11 +12,23 @@ def lire_noms_de_fichier(nom_fichier):
         print("Le fichier spécifié n'existe pas.")
         return []
 
+def ajouter_fichiers():
+    nouveaux_noms = []
+    while True:
+        nom_fichier = input("test.txt")
+        if nom_fichier.lower() == 'fin':
+            break
+        nouveaux_noms.append(nom_fichier)
+    return nouveaux_noms
+
 if __name__ == "__main__":
     nom_fichier = "noms_fichiers.txt"  # Nom du fichier contenant les noms des fichiers
     noms = lire_noms_de_fichier(nom_fichier)
-    noms_tries = trier_liste_noms(noms)
     
     if noms:
-        print("Noms non triés:", noms)
-        print("Noms triés:", noms_tries)
+        print("Noms actuels:", noms)
+        fichiers_a_ajouter = ajouter_fichiers()
+        noms.extend(fichiers_a_ajouter)
+        noms_tries = trier_liste_noms(noms)
+        
+        print("\nNoms triés:", noms_tries)
