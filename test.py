@@ -15,7 +15,7 @@ def lire_noms_de_fichier(nom_fichier):
 def ajouter_fichiers():
     nouveaux_noms = []
     while True:
-        nom_fichier = input("test.txt")
+        nom_fichier = input("Entrez le nom du fichier à ajouter (ou 'fin' pour terminer) : ")
         if nom_fichier.lower() == 'fin':
             break
         nouveaux_noms.append(nom_fichier)
