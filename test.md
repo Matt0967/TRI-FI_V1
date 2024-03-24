@@ -59,6 +59,4 @@ et car j'ai des comtépence en <u>CSS</u> avec <u>python</u> et C++/Java/JavaScr
 # les logo 
 Faire choisir papa 
 
-![[test logo app TRI-FI.zip]]
-
 ***
